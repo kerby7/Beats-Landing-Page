@@ -77,16 +77,20 @@
 /* Main body image and texts */
 .main-body{
   height: 800px;
+  height: 800px;
   width: 100%;
   background-image: url("hp-hero-studiopro.jpg.large.2x.jpg");
   background-size: cover;
-  display: flex;
+  position: absolute;
 }
+
 .body-writings{
-  margin-top: 280px;
-  margin-left: 50px;
-  height: 300px;
-  width: 600px;
+ height: 400px;
+ width: 400px;
+ position: relative;
+ top: 280px;
+ left: 50px;
+ 
 }
 .p-1{
   color: red;
@@ -107,10 +111,51 @@
   margin-left: 4px;
 }
 
-.buttons{
-  height: 80px;
-  width: 300px;
-  margin: -20px 0px 0px;
-  
+.button{
+   height: 100px;
+   width:  400px;
+   position: relative;
+   top: 120px;
+   left: 30px;
+   display: flex;
+   
 }
 
+.button-1{
+  background-color: black;
+  border: 1px solid black;
+  height: 46px;
+  width: 102px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-1 a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+}
+
+.button-2{
+  height: 46px;
+  width: 170px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+
+}
+
+.button-2 a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+}
