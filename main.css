@@ -167,7 +167,7 @@ header img{
     height: 300px;
     width:  500px;
     position: relative;
-    right: 80px;
+    right: 110px;
     background-size: cover;
     background-position: center;
   }
@@ -349,7 +349,7 @@ header img{
   color: white;
 }
 .section-writings span{
-  font-size: 22px;
+  font-size: 19px;
   font-weight: bold;
   margin-right: 10px;
   
@@ -402,18 +402,18 @@ header img{
     background-position: center;
   }
   .section-writings span{
-     font-size: 20px;
+     font-size: 15px;
      position: relative;
      right: 20px;
 
   }
   .section-writings h1{
-    font-size: 30px;
+    font-size: 40px;
     position: relative;
     right: 20px;
   }
   .section-writings h2{
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     right: 20px;
   }
