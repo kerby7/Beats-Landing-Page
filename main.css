@@ -1,57 +1,64 @@
 * {
-  margin: 0px;
+  margin: 0;
   border: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
 }
 
 /* Header navbar */
-.navbar{
-  height: 90px;
-  background-color: whitesmoke;
+header{
+  height: 80px;
+  width: 100%;
   color: black;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  padding: 20px 5%;
   
 }
 
-.nav-logo{
-  height: 80px;
-  width: 50px;
-  margin-left: 80px;
-  margin-top: 20px;
+header img{
+  height: 40px;
+  max-width: 120px;
 }
 
-.logo{
-  height: 50px;
-  width: 100%;
-  background-image: url("beats-logo-161616.png");
-  background-size: cover;
-}
-
-.nav-list{
-  width: 500px;
+.nav-menu{
+  margin-top: 10px;
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 350px;
 }
 
-.nav-list a{
-  text-decoration: none;
+.nav-menu a{
   color: black;
+  font-size: 16px;
+  padding: 20px 40px;
+  text-decoration: none;
   font-weight: bold;
+  transition: all .42s ease;
 }
 
-.search-button{
-  width: 400px;
-}
-
-.search-logo{
-  text-align: end;
-  font-weight: bold;
-}
-
-.underline:hover{
+.nav-menu a:hover{
   color: red;
+}
+
+.nav-icon{
+  display: flex;
+  align-items: center;  
+}
+/* Rresponsiveness */
+@media screen and (max-width:586px) {
+  .nav-menu{
+    display: none;
+  }
+  .logo{
+    position: relative;
+    left: 100px;
+  }
+  .nav-icon{
+    position: relative;
+    left: 90px;
+  }
+  
 }
 
 /* Black bar */
@@ -76,50 +83,42 @@
 }
 
 /* Main body image and texts */
+
 .main-body{
-  height: 800px;
+  height: 100vh;
   width: 100%;
-  background-image: url("hp-hero-studiopro.jpg.large.2x.jpg");
+  background-image: url(image/hp-hero-studiopro.jpg.large.2x.jpg);
+  background-position: center;
   background-size: cover;
 }
 
 .body-writings{
- height: 400px;
- width: 400px;
- position: relative;
- top: 280px;
- left: 50px;
- 
+  height: 300px;
+  width:  400px;
+  padding-top: 20%;
+  padding-left: 5%;
 }
-.p-1{
+.body-writings span{
   color: red;
   font-weight: bold;
-  margin-bottom: 1px;
-  font-size: 22px;
-  margin-left: 4px;
+  font-size: 20px;
 }
-.p-2{
-  font-size: 70px;
-}
-.p-3{
-  margin-top: -5px;
-  font-size: 70px;
-}
-.p-4{
-  font-size: 28px;
-  margin-left: 4px;
+.body-writings h1{
+  font-size: 60px;
+  font-weight: bold;
+  line-height:1;
 }
 
+.body-writings h2{
+  font-weight: bold;
+}
 .button{
    height: 100px;
    width:  400px;
-   position: relative;
-   top: 120px;
-   left: 30px;
    display: flex;
-   
+   padding-top: 16%;
+   padding-left: 3.5%;
 }
-
 .button-1{
   background-color: black;
   border: 2px solid black;
@@ -133,6 +132,7 @@
   align-items: center;
   border-radius: 30px;
 }
+
 .button-1 a{
   text-decoration: none;
   color: white;
@@ -160,12 +160,41 @@
   font-size: 13px;
 
 }
+/* Responsiveness */
+@media (max-width:900px) and (min-width:400px){
+  .body-img{
+    background-image: url(image/hp-hero-studiopro.jpg.large.2x.jpg);
+    height: 300px;
+    width:  500px;
+    position: relative;
+    right: 80px;
+    background-size: cover;
+    background-position: center;
+  }
+  .main-body{
+    background-image: none;
+    background-color: #CFC8BE; 
+  }
+  .body-writings{
+    padding-top: 80px;
+  }
+  .body-writings span{
+    font-size: 15px;
+  }
+  .body-writings h1{
+    font-size: 45px;
+  }
+  .button{
+    position: relative;
+    bottom: 100px;
+    right: 20px;
+  }
+}
 
 /* Popular now section */
 .popular-now{
   height: 800px;
   background-color: #f0f0f0;
-  
 }
 
 .popular-header h2{
@@ -205,16 +234,16 @@
   margin-left: 50px;
 }
 .item-1-img{
-  background-image: url("img1.jpg");
+  background-image: url("image/img1.jpg");
   background-size: cover;
 }
 
 .item-2-img{
-  background-image: url("img2.jpg");
+  background-image: url("image/img2.jpg");
   background-size: cover;
 }
 .item-3-img{
-  background-image: url("img3.png");
+  background-image: url("image/img3.png");
   background-size: cover;
 }
 .item-info{
@@ -234,13 +263,81 @@
 .item-info p{
   font-size: 22px;
   font-weight: bold;
-  
+}
+
+/* Responsiveness */
+@media screen and (max-width:700px){
+  .popular-header{
+    position: relative;
+    top: 60px;
+    font-weight: bold;
+  }
+  .popular-now{
+    height: 1980px;
+  }
+  .popular-items-container{
+    display: block;
+  } 
+  .item{
+    width: auto;
+  } 
+  .item-1{
+    position: relative;
+    left: 10px;
+    bottom: -70px;
+  }
+  .item-2{
+    position: relative;
+    left: 10px;
+  }
+  .item-3{
+    position: relative;
+    left: 10px;
+    top: -60px;
+  }
+  .item-image{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    height: 200px;
+    width: 200px;
+  }
+  .item-info{
+    position: relative;
+    top: 50px;
+    right: 40px;
+  }
+  .item-info span{
+    position: relative;
+    top: 40px;
+    left: 120px;
+  }
+  .h3-1{
+    position: relative;
+    top: 40px;
+    left: 30px;
+  }
+  .item-info p{
+    position: relative;
+    top: 40px;
+    left: 100px;
+  }
+  .h3-2{
+    position: relative;
+    top:  40px;
+    left: 50px;
+  }
+  .h3-3{
+    position: relative;
+    top: 40px;
+    left: 70px;
+  }
 }
 
 /* Beats+ banner section */
 .beats-section{
-  height: 1000px;
-  background-image: url("img.jpg");
+  height: 100vh;
+  background-image: url(image/img.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -289,77 +386,43 @@
   color: white;
 }
 
-.apple-section{
-  height: 400px;
-}
 
-.apple-header{
-  margin-top: 60px;
-  text-align: center;
-  font-size: 20px;
-}
 
-.apple-services-cards-container{
-  height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Media Queries for Beats section */
+@media screen and (max-width:700px) {
+  .beats-section{
+    background-image: none;
+    background-color: #464D5D;
+  }
+  .section-img{
+    background-image: url(image/img.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    background-position: center;
+  }
+  .section-writings span{
+     font-size: 20px;
+     position: relative;
+     right: 20px;
 
-.card{
-  height: 290px;
-  width: 400px;
-  
-}
-
-.card-image{
-  height: 78px;
-  width: 75px;
-  margin-top: 50px;
-  margin-left: 175px;
-}
-.image-1{
-  background-image: url("img5.png");
-  background-size: cover;
-}
-
-.image-2{
-  background-image: url("img6.png");
-  background-size: cover;
-  margin-left: 180px;
-}
-
-.image-3{
-  width: 105px;
-  background-image: url("img7.png");
-  background-size: cover;
-  margin-left: 165px;
-}
-
-.card-writings{
-  margin-left: 50px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.h2-1{
-  margin-left: 5px;
-  margin-bottom: 20px;
-}
-.para{
-  font-weight: 100;
-  margin-bottom: 15px;
-}
-.card-writings a{
-  font-size: 20px;
-  color: #161616;
-  font-weight: bold;
+  }
+  .section-writings h1{
+    font-size: 30px;
+    position: relative;
+    right: 20px;
+  }
+  .section-writings h2{
+    font-size: 30px;
+    position: relative;
+    right: 20px;
+  }
 }
 
 /* Contact Section */
 .contact-box{
   height: 400px;
+  width: 100%;
   background-color: black;
 }
 
@@ -388,9 +451,17 @@
 }
 
 .button-contact{
-  width: 400px;
+  width: 45%;
   height: 40px;
   background-color: #161616;
   border: 1px solid white;
   border-radius: 30px;
+}
+
+
+/*Contact section media queries */
+@media screen and (max-width:780px){
+.contact-box{
+  width: 100%;
+}
 }
