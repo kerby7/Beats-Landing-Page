@@ -87,7 +87,7 @@ header img{
 .main-body{
   height: 100vh;
   width: 100%;
-  background-image: url(image/hp-hero-studiopro.jpg.large.2x.jpg);
+  background-image: url("hp-hero-studiopro.jpg.large.2x.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -163,7 +163,7 @@ header img{
 /* Responsiveness */
 @media (max-width:900px) and (min-width:400px){
   .body-img{
-    background-image: url(image/hp-hero-studiopro.jpg.large.2x.jpg);
+    background-image: url("hp-hero-studiopro.jpg.large.2x.jpg");
     height: 300px;
     width:  500px;
     position: relative;
@@ -234,16 +234,16 @@ header img{
   margin-left: 50px;
 }
 .item-1-img{
-  background-image: url("image/img1.jpg");
+  background-image: url("img1.jpg");
   background-size: cover;
 }
 
 .item-2-img{
-  background-image: url("image/img2.jpg");
+  background-image: url("img2.jpg");
   background-size: cover;
 }
 .item-3-img{
-  background-image: url("image/img3.png");
+  background-image: url("img3.png");
   background-size: cover;
 }
 .item-info{
@@ -337,7 +337,7 @@ header img{
 /* Beats+ banner section */
 .beats-section{
   height: 100vh;
-  background-image: url(image/img.jpg);
+  background-image: url("img.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -395,7 +395,7 @@ header img{
     background-color: #464D5D;
   }
   .section-img{
-    background-image: url(image/img.jpg);
+    background-image: url("img.jpg");
     background-size: cover;
     height: 300px;
     width: 500px;
